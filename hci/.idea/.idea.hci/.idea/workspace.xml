@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="307612b3-ad79-440a-a090-aedbee4a60f1" name="Changes" comment="" />
+    <list default="true" id="307612b3-ad79-440a-a090-aedbee4a60f1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +38,7 @@
   "keyToString": {
     "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Vincent-Workspace",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -98,6 +100,7 @@
       <workItem from="1735478645604" duration="6196000" />
       <workItem from="1735516556152" duration="8114000" />
       <workItem from="1735564706649" duration="187000" />
+      <workItem from="1735564905443" duration="2650000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="NuGet" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/ConsoleApp1/Nefarius.ViGEm.Client.1.21.256/lib/netstandard2.0/Nefarius.ViGEm.Client.dll" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/ConsoleApp1/Nefarius.ViGEm.Client.1.21.256/lib/netstandard2.0/Nefarius.ViGEm.Client.dll" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
