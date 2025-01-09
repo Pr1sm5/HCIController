@@ -5,6 +5,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="307612b3-ad79-440a-a090-aedbee4a60f1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/App.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.hci/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.hci/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/.idea/.idea.ConsoleApp1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/.idea/.idea.ConsoleApp1/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/.idea/.idea.ConsoleApp1/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/.idea/.idea.ConsoleApp1/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/.idea/.idea.ConsoleApp1/.idea/libraries/NuGet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/Client.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/ControllerEmu.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/ControllerInputData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/Nefarius.ViGEm.Client.1.21.256/.signature.p7s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/Nefarius.ViGEm.Client.1.21.256/Nefarius.ViGEm.Client.1.21.256.nupkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/Nefarius.ViGEm.Client.1.21.256/ViGEm_Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/Nefarius.ViGEm.Client.1.21.256/lib/netstandard2.0/Nefarius.ViGEm.Client.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/Server.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/bin/Debug/net8.0/Nefarius.ViGEm.Client.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/bin/Debug/net8.0/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/Debug/net8.0.11/.NETCoreApp,Version=v8.0.11.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/Debug/net8.0.11/ConsoleApp1.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/Debug/net8.0.11/ConsoleApp1.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/Debug/net8.0.11/ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/Debug/net8.0.11/ConsoleApp1.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/Debug/net8.0.11/ConsoleApp1.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/Debug/net8.0.11/ConsoleApp1.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/Debug/net8.0.11/ConsoleApp1.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/Debug/net8.0/ConsoleA.CB28C8CC.Up2Date" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/Debug/net8.0/apphost.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/Debug/net8.0/ref/ConsoleApp1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/Debug/net8.0/refint/ConsoleApp1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/rider.project.model.nuget.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ConsoleApp1/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +76,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/SaveLayoutPanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UniversalButtonHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy/Editor/ViewSwitcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Runtime/UGUI/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
@@ -34,23 +90,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity\6000.0.32f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.32f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;C:\Users\Anwender\OneDrive\Kot\Semester 3\HCI\hci&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Anwender\OneDrive\Kot\Semester 3\HCI\hci" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -58,7 +114,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity\6000.0.32f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.32f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;C:\Users\Anwender\OneDrive\Kot\Semester 3\HCI\hci&quot; -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Anwender\OneDrive\Kot\Semester 3\HCI\hci" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -101,6 +157,9 @@
       <workItem from="1735516556152" duration="8114000" />
       <workItem from="1735564706649" duration="187000" />
       <workItem from="1735564905443" duration="2650000" />
+      <workItem from="1736413943783" duration="547000" />
+      <workItem from="1736415268524" duration="469000" />
+      <workItem from="1736415766698" duration="889000" />
     </task>
     <servers />
   </component>
