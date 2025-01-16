@@ -3,32 +3,53 @@ using UnityEngine;
 public class UniversalButtonHandler : MonoBehaviour
 {
     public GameObject settingsPanel;
-    public GameObject controls;
-    public GameObject layoutPanel;// Verknüpfe das Panel im Inspector
+    public GameObject controllerPanel;
+    public GameObject layoutPanel;
+    public JoystickHandler[] joysticks; // Referenzen zu allen Joysticks
 
     public void OpenSettings()
     {
         settingsPanel.SetActive(true);
-        controls.SetActive(false); // Settings-Panel anzeigen
+        controllerPanel.SetActive(false);
+        layoutPanel.SetActive(false);
     }
 
     public void CloseSettings()
     {
         settingsPanel.SetActive(false);
-        controls.SetActive(true); // Controller-Panel anzeigen
+        controllerPanel.SetActive(true);
+        layoutPanel.SetActive(false);
     }
     
     public void OpenLayout()
     {
         layoutPanel.SetActive(true);
-        settingsPanel.SetActive(false); // Layout-Panel anzeigen
+        settingsPanel.SetActive(false);
+        controllerPanel.SetActive(false);
+        
+        // Aktiviere Layout-Modus für alle Joysticks im Layout-Panel
+        foreach (JoystickHandler joystick in joysticks)
+        {
+            if (joystick.transform.parent == layoutPanel.transform)
+            {
+                joystick.SetLayoutMode(true);
+            }
+        }
     }
 
     public void CloseLayout()
     {
         settingsPanel.SetActive(true);
-        layoutPanel.SetActive(false); // Settings-Panel anzeigen
+        layoutPanel.SetActive(false);
+        controllerPanel.SetActive(false);
+        
+        // Deaktiviere Layout-Modus für alle Joysticks
+        foreach (JoystickHandler joystick in joysticks)
+        {
+            joystick.SetLayoutMode(false);
+        }
     }
+
     
     public void OnButtonPress(string buttonName)
     {

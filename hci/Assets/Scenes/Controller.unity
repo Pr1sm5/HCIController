@@ -221,6 +221,7 @@ GameObject:
   - component: {fileID: 50172280}
   - component: {fileID: 50172283}
   - component: {fileID: 50172284}
+  - component: {fileID: 50172285}
   m_Layer: 5
   m_Name: B
   m_TagString: Untagged
@@ -367,8 +368,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 0}
-  controls: {fileID: 0}
+  controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
+  joysticks: []
+--- !u!114 &50172285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50172278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fa655aadce45a4815a7cb6f7fc7be0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &51494741
 GameObject:
   m_ObjectHideFlags: 0
@@ -695,6 +709,7 @@ MonoBehaviour:
   savePanel: {fileID: 363534787}
   layoutNameInput: {fileID: 51494743}
   layoutManager: {fileID: 690772427}
+  layoutDropdown: {fileID: 1453376783}
 --- !u!1 &190491748
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,6 +760,7 @@ GameObject:
   - component: {fileID: 282941308}
   - component: {fileID: 282941311}
   - component: {fileID: 282941312}
+  - component: {fileID: 282941313}
   m_Layer: 5
   m_Name: Y
   m_TagString: Untagged
@@ -891,8 +907,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 0}
-  controls: {fileID: 0}
+  controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
+  joysticks: []
+--- !u!114 &282941313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282941306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fa655aadce45a4815a7cb6f7fc7be0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &327602928
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,6 +1013,8 @@ GameObject:
   - component: {fileID: 353396843}
   - component: {fileID: 353396842}
   - component: {fileID: 353396841}
+  - component: {fileID: 353396846}
+  - component: {fileID: 353396845}
   m_Layer: 5
   m_Name: Settings
   m_TagString: Untagged
@@ -1023,8 +1054,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 327602928}
-  controls: {fileID: 1161780635}
-  layoutPanel: {fileID: 0}
+  controllerPanel: {fileID: 1161780635}
+  layoutPanel: {fileID: 1590190274}
+  joysticks: []
 --- !u!114 &353396842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1071,14 +1103,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 353396841}
         m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
-        m_MethodName: OnButtonPress
-        m_Mode: 5
+        m_MethodName: CloseSettings
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Settings
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &353396843
@@ -1119,6 +1151,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353396839}
   m_CullTransparentMesh: 1
+--- !u!114 &353396845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353396839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ece8ef0c4f306044b5ba8621845a7d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  savedLayouts: []
+  layoutButtons: []
+  controllerButtons: []
+  sticks: []
+--- !u!114 &353396846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353396839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a390417cc8f20d64590e03f7793d06d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layoutDropdown: {fileID: 1453376784}
+  layoutManager: {fileID: 690772427}
 --- !u!1 &363534787
 GameObject:
   m_ObjectHideFlags: 0
@@ -1175,6 +1237,7 @@ MonoBehaviour:
   savePanel: {fileID: 363534787}
   layoutNameInput: {fileID: 51494743}
   layoutManager: {fileID: 690772427}
+  layoutDropdown: {fileID: 1453376783}
 --- !u!114 &363534790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1415,6 +1478,7 @@ GameObject:
   - component: {fileID: 370503631}
   - component: {fileID: 370503634}
   - component: {fileID: 370503635}
+  - component: {fileID: 370503636}
   m_Layer: 5
   m_Name: X
   m_TagString: Untagged
@@ -1561,8 +1625,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 0}
-  controls: {fileID: 0}
+  controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
+  joysticks: []
+--- !u!114 &370503636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370503629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fa655aadce45a4815a7cb6f7fc7be0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &379566646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1577,7 +1654,7 @@ GameObject:
   - component: {fileID: 379566649}
   - component: {fileID: 379566652}
   m_Layer: 5
-  m_Name: Settings-Layer
+  m_Name: Settings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1860,7 +1937,7 @@ GameObject:
   - component: {fileID: 476938271}
   - component: {fileID: 476938276}
   m_Layer: 5
-  m_Name: LB-Layer
+  m_Name: LB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1898,8 +1975,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 0}
-  controls: {fileID: 0}
+  controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
+  joysticks: []
 --- !u!114 &476938272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2113,10 +2191,11 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1514377778}
   - {fileID: 690772426}
   - {fileID: 1161780636}
-  - {fileID: 327602929}
   - {fileID: 1590190277}
+  - {fileID: 327602929}
   - {fileID: 363534788}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2214,7 +2293,7 @@ GameObject:
   - component: {fileID: 684190803}
   - component: {fileID: 684190806}
   m_Layer: 5
-  m_Name: 'Right-Stick '
+  m_Name: Right-Stick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2326,6 +2405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handle: {fileID: 684190802}
   maxDistance: 50
+  isLayoutMode: 0
 --- !u!1 &690772425
 GameObject:
   m_ObjectHideFlags: 0
@@ -2375,18 +2455,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   savedLayouts: []
-  buttons:
+  layoutButtons:
   - {fileID: 1801464637}
   - {fileID: 847398946}
   - {fileID: 379566646}
   - {fileID: 702547671}
+  - {fileID: 476938269}
   - {fileID: 703707406}
+  - {fileID: 1904859428}
   - {fileID: 718531962}
   - {fileID: 922764584}
   - {fileID: 1805018837}
   - {fileID: 2139390116}
-  - {fileID: 476938269}
-  - {fileID: 1904859428}
+  controllerButtons:
+  - {fileID: 1120171403}
+  - {fileID: 1217093974}
+  - {fileID: 1779001776}
+  - {fileID: 1543265950}
+  - {fileID: 1341406082}
+  - {fileID: 50172278}
+  - {fileID: 1689861024}
+  - {fileID: 370503629}
+  - {fileID: 282941306}
+  - {fileID: 2009326371}
+  - {fileID: 684190801}
+  sticks: []
 --- !u!1 &702547671
 GameObject:
   m_ObjectHideFlags: 0
@@ -2403,7 +2496,7 @@ GameObject:
   - component: {fileID: 702547673}
   - component: {fileID: 702547678}
   m_Layer: 5
-  m_Name: A-Layer
+  m_Name: A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2441,8 +2534,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 0}
-  controls: {fileID: 0}
+  controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
+  joysticks: []
 --- !u!114 &702547674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2578,7 +2672,7 @@ GameObject:
   - component: {fileID: 703707408}
   - component: {fileID: 703707413}
   m_Layer: 5
-  m_Name: B-Layer
+  m_Name: B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2616,8 +2710,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 0}
-  controls: {fileID: 0}
+  controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
+  joysticks: []
 --- !u!114 &703707409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2753,7 +2848,7 @@ GameObject:
   - component: {fileID: 718531964}
   - component: {fileID: 718531969}
   m_Layer: 5
-  m_Name: X-Layer
+  m_Name: X
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2791,8 +2886,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 0}
-  controls: {fileID: 0}
+  controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
+  joysticks: []
 --- !u!114 &718531965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3139,7 +3235,7 @@ GameObject:
   - component: {fileID: 847398948}
   - component: {fileID: 847398953}
   m_Layer: 5
-  m_Name: Select-Layer
+  m_Name: Select
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3177,8 +3273,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 0}
-  controls: {fileID: 0}
+  controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
+  joysticks: []
 --- !u!114 &847398949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3386,8 +3483,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 327602928}
-  controls: {fileID: 1161780635}
+  controllerPanel: {fileID: 1161780635}
   layoutPanel: {fileID: 1590190274}
+  joysticks: []
 --- !u!114 &900545774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3498,7 +3596,7 @@ GameObject:
   - component: {fileID: 922764586}
   - component: {fileID: 922764591}
   m_Layer: 5
-  m_Name: Y-Layer
+  m_Name: Y
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3536,8 +3634,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 0}
-  controls: {fileID: 0}
+  controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
+  joysticks: []
 --- !u!114 &922764587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3787,8 +3886,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 327602928}
-  controls: {fileID: 1161780635}
+  controllerPanel: {fileID: 1161780635}
   layoutPanel: {fileID: 1590190274}
+  joysticks: []
 --- !u!114 &1117735690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3908,7 +4008,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   savedLayouts: []
-  buttons: []
+  layoutButtons: []
+  controllerButtons: []
+  sticks: []
 --- !u!114 &1117735694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3937,6 +4039,7 @@ GameObject:
   - component: {fileID: 1120171405}
   - component: {fileID: 1120171408}
   - component: {fileID: 1120171409}
+  - component: {fileID: 1120171410}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -4083,8 +4186,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 0}
-  controls: {fileID: 0}
+  controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
+  joysticks: []
+--- !u!114 &1120171410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120171403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fa655aadce45a4815a7cb6f7fc7be0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1161780635
 GameObject:
   m_ObjectHideFlags: 0
@@ -4415,6 +4531,7 @@ GameObject:
   - component: {fileID: 1217093976}
   - component: {fileID: 1217093979}
   - component: {fileID: 1217093980}
+  - component: {fileID: 1217093981}
   m_Layer: 5
   m_Name: Select
   m_TagString: Untagged
@@ -4561,8 +4678,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 0}
-  controls: {fileID: 0}
+  controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
+  joysticks: []
+--- !u!114 &1217093981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217093974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fa655aadce45a4815a7cb6f7fc7be0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1221912621
 GameObject:
   m_ObjectHideFlags: 0
@@ -4840,6 +4970,7 @@ GameObject:
   - component: {fileID: 1341406084}
   - component: {fileID: 1341406087}
   - component: {fileID: 1341406088}
+  - component: {fileID: 1341406089}
   m_Layer: 5
   m_Name: LB
   m_TagString: Untagged
@@ -4986,8 +5117,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 0}
-  controls: {fileID: 0}
+  controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
+  joysticks: []
+--- !u!114 &1341406089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341406082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fa655aadce45a4815a7cb6f7fc7be0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1453376781
 GameObject:
   m_ObjectHideFlags: 0
@@ -5106,7 +5250,19 @@ MonoBehaviour:
       m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1514377777}
+        m_TargetAssemblyTypeName: LayoutDropdown, Assembly-CSharp
+        m_MethodName: OnDropdownValueChanged
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &1453376785
 MonoBehaviour:
@@ -5146,6 +5302,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453376781}
   m_CullTransparentMesh: 1
+--- !u!1 &1514377776
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1514377778}
+  - component: {fileID: 1514377777}
+  m_Layer: 0
+  m_Name: LayoutDropdown
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1514377777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514377776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a390417cc8f20d64590e03f7793d06d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layoutDropdown: {fileID: 1453376784}
+  layoutManager: {fileID: 690772427}
+--- !u!4 &1514377778
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514377776}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -960, y: -540, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 580462297}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1543265950
 GameObject:
   m_ObjectHideFlags: 0
@@ -5160,6 +5362,7 @@ GameObject:
   - component: {fileID: 1543265952}
   - component: {fileID: 1543265955}
   - component: {fileID: 1543265956}
+  - component: {fileID: 1543265957}
   m_Layer: 5
   m_Name: A
   m_TagString: Untagged
@@ -5306,8 +5509,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 0}
-  controls: {fileID: 0}
+  controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
+  joysticks: []
+--- !u!114 &1543265957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543265950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fa655aadce45a4815a7cb6f7fc7be0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1590190274
 GameObject:
   m_ObjectHideFlags: 0
@@ -5485,6 +5701,7 @@ GameObject:
   - component: {fileID: 1689861026}
   - component: {fileID: 1689861029}
   - component: {fileID: 1689861030}
+  - component: {fileID: 1689861031}
   m_Layer: 5
   m_Name: RB
   m_TagString: Untagged
@@ -5631,8 +5848,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 0}
-  controls: {fileID: 0}
+  controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
+  joysticks: []
+--- !u!114 &1689861031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689861024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fa655aadce45a4815a7cb6f7fc7be0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1709367130
 GameObject:
   m_ObjectHideFlags: 0
@@ -5784,6 +6014,7 @@ GameObject:
   - component: {fileID: 1779001780}
   - component: {fileID: 1779001779}
   - component: {fileID: 1779001782}
+  - component: {fileID: 1779001783}
   m_Layer: 5
   m_Name: Settings
   m_TagString: Untagged
@@ -5917,8 +6148,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 327602928}
-  controls: {fileID: 1161780635}
+  controllerPanel: {fileID: 1161780635}
   layoutPanel: {fileID: 1590190274}
+  joysticks: []
+--- !u!114 &1779001783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779001776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fa655aadce45a4815a7cb6f7fc7be0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1801464637
 GameObject:
   m_ObjectHideFlags: 0
@@ -5935,7 +6179,7 @@ GameObject:
   - component: {fileID: 1801464639}
   - component: {fileID: 1801464644}
   m_Layer: 5
-  m_Name: Start-Layer
+  m_Name: Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5973,8 +6217,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 0}
-  controls: {fileID: 0}
+  controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
+  joysticks: []
 --- !u!114 &1801464640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6106,8 +6351,9 @@ GameObject:
   - component: {fileID: 1805018842}
   - component: {fileID: 1805018841}
   - component: {fileID: 1805018843}
+  - component: {fileID: 1805018844}
   m_Layer: 5
-  m_Name: Left-Stick-Layer
+  m_Name: Left-Stick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6182,6 +6428,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95088858d9944154188d163f9da899ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1805018844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805018837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f9a6bb7399c4478963b1ac0514c1228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handle: {fileID: 1805018838}
+  maxDistance: 50
+  isLayoutMode: 1
 --- !u!1 &1831033609
 GameObject:
   m_ObjectHideFlags: 0
@@ -6577,6 +6838,7 @@ MonoBehaviour:
   savePanel: {fileID: 363534787}
   layoutNameInput: {fileID: 51494743}
   layoutManager: {fileID: 690772427}
+  layoutDropdown: {fileID: 1453376783}
 --- !u!114 &1860135400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6687,7 +6949,7 @@ GameObject:
   - component: {fileID: 1904859430}
   - component: {fileID: 1904859435}
   m_Layer: 5
-  m_Name: RB-Layer
+  m_Name: RB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6725,8 +6987,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 0}
-  controls: {fileID: 0}
+  controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
+  joysticks: []
 --- !u!114 &1904859431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7035,6 +7298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handle: {fileID: 2009326372}
   maxDistance: 50
+  isLayoutMode: 0
 --- !u!114 &2009326374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7210,8 +7474,9 @@ GameObject:
   - component: {fileID: 2139390121}
   - component: {fileID: 2139390120}
   - component: {fileID: 2139390122}
+  - component: {fileID: 2139390123}
   m_Layer: 5
-  m_Name: Right-Stick-Layer
+  m_Name: Right-Stick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7286,6 +7551,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95088858d9944154188d163f9da899ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2139390123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139390116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f9a6bb7399c4478963b1ac0514c1228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handle: {fileID: 2139390117}
+  maxDistance: 50
+  isLayoutMode: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
