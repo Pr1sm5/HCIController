@@ -219,6 +219,7 @@ GameObject:
   - component: {fileID: 50172282}
   - component: {fileID: 50172281}
   - component: {fileID: 50172280}
+  - component: {fileID: 50172286}
   - component: {fileID: 50172283}
   - component: {fileID: 50172284}
   - component: {fileID: 50172285}
@@ -291,19 +292,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 50172281}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 50172284}
-        m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
-        m_MethodName: OnButtonPress
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: B
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &50172281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,7 +351,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50172278}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 371e979a7cdee2148b5b6de3319ec8fb, type: 3}
   m_Name: 
@@ -370,7 +359,8 @@ MonoBehaviour:
   settingsPanel: {fileID: 0}
   controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
-  joysticks: []
+  joystickLeft: {fileID: 0}
+  joystickRight: {fileID: 0}
 --- !u!114 &50172285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -383,6 +373,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19fa655aadce45a4815a7cb6f7fc7be0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &50172286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50172278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1853925892}
+          m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
+          m_MethodName: OnButtonPress
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: B
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1853925892}
+          m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
+          m_MethodName: OnButtonRelease
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: B
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &51494741
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,6 +595,85 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 51494741}
+  m_CullTransparentMesh: 1
+--- !u!1 &70862822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 70862823}
+  - component: {fileID: 70862825}
+  - component: {fileID: 70862824}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &70862823
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70862822}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 760163521}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &70862824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70862822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Connect
+--- !u!222 &70862825
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70862822}
   m_CullTransparentMesh: 1
 --- !u!1 &184651146
 GameObject:
@@ -758,6 +872,7 @@ GameObject:
   - component: {fileID: 282941310}
   - component: {fileID: 282941309}
   - component: {fileID: 282941308}
+  - component: {fileID: 282941314}
   - component: {fileID: 282941311}
   - component: {fileID: 282941312}
   - component: {fileID: 282941313}
@@ -830,19 +945,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 282941309}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 282941312}
-        m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
-        m_MethodName: OnButtonPress
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Y
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &282941309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -901,7 +1004,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 282941306}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 371e979a7cdee2148b5b6de3319ec8fb, type: 3}
   m_Name: 
@@ -909,7 +1012,8 @@ MonoBehaviour:
   settingsPanel: {fileID: 0}
   controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
-  joysticks: []
+  joystickLeft: {fileID: 0}
+  joystickRight: {fileID: 0}
 --- !u!114 &282941313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -922,6 +1026,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19fa655aadce45a4815a7cb6f7fc7be0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &282941314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282941306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1853925892}
+          m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
+          m_MethodName: OnButtonPress
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Y
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1853925892}
+          m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
+          m_MethodName: OnButtonRelease
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Y
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &327602928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,7 +1197,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353396839}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 371e979a7cdee2148b5b6de3319ec8fb, type: 3}
   m_Name: 
@@ -1056,7 +1205,8 @@ MonoBehaviour:
   settingsPanel: {fileID: 327602928}
   controllerPanel: {fileID: 1161780635}
   layoutPanel: {fileID: 1590190274}
-  joysticks: []
+  joystickLeft: {fileID: 0}
+  joystickRight: {fileID: 0}
 --- !u!114 &353396842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1476,6 +1626,7 @@ GameObject:
   - component: {fileID: 370503633}
   - component: {fileID: 370503632}
   - component: {fileID: 370503631}
+  - component: {fileID: 370503637}
   - component: {fileID: 370503634}
   - component: {fileID: 370503635}
   - component: {fileID: 370503636}
@@ -1548,19 +1699,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 370503632}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 370503635}
-        m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
-        m_MethodName: OnButtonPress
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: X
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &370503632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1619,7 +1758,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 370503629}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 371e979a7cdee2148b5b6de3319ec8fb, type: 3}
   m_Name: 
@@ -1627,7 +1766,8 @@ MonoBehaviour:
   settingsPanel: {fileID: 0}
   controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
-  joysticks: []
+  joystickLeft: {fileID: 0}
+  joystickRight: {fileID: 0}
 --- !u!114 &370503636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1640,6 +1780,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19fa655aadce45a4815a7cb6f7fc7be0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &370503637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370503629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1853925892}
+          m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
+          m_MethodName: OnButtonPress
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: X
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1853925892}
+          m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
+          m_MethodName: OnButtonRelease
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: X
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &379566646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1722,19 +1907,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 379566650}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
-        m_MethodName: OnButtonPress
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Settings
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &379566650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1969,7 +2142,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476938269}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 371e979a7cdee2148b5b6de3319ec8fb, type: 3}
   m_Name: 
@@ -1977,7 +2150,8 @@ MonoBehaviour:
   settingsPanel: {fileID: 0}
   controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
-  joysticks: []
+  joystickLeft: {fileID: 0}
+  joystickRight: {fileID: 0}
 --- !u!114 &476938272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2034,19 +2208,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 476938274}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 476938271}
-        m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
-        m_MethodName: OnButtonPress
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: LB
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &476938274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2292,6 +2454,7 @@ GameObject:
   - component: {fileID: 684190804}
   - component: {fileID: 684190803}
   - component: {fileID: 684190806}
+  - component: {fileID: 684190807}
   m_Layer: 5
   m_Name: Right-Stick
   m_TagString: Untagged
@@ -2406,6 +2569,27 @@ MonoBehaviour:
   handle: {fileID: 684190802}
   maxDistance: 50
   isLayoutMode: 0
+--- !u!114 &684190807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684190801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls: []
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &690772425
 GameObject:
   m_ObjectHideFlags: 0
@@ -2528,7 +2712,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 702547671}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 371e979a7cdee2148b5b6de3319ec8fb, type: 3}
   m_Name: 
@@ -2536,7 +2720,8 @@ MonoBehaviour:
   settingsPanel: {fileID: 0}
   controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
-  joysticks: []
+  joystickLeft: {fileID: 0}
+  joystickRight: {fileID: 0}
 --- !u!114 &702547674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2593,19 +2778,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 702547676}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 702547673}
-        m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
-        m_MethodName: OnButtonPress
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: A
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &702547676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2704,7 +2877,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 703707406}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 371e979a7cdee2148b5b6de3319ec8fb, type: 3}
   m_Name: 
@@ -2712,7 +2885,8 @@ MonoBehaviour:
   settingsPanel: {fileID: 0}
   controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
-  joysticks: []
+  joystickLeft: {fileID: 0}
+  joystickRight: {fileID: 0}
 --- !u!114 &703707409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2769,19 +2943,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 703707411}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 703707408}
-        m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
-        m_MethodName: OnButtonPress
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: B
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &703707411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2880,7 +3042,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718531962}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 371e979a7cdee2148b5b6de3319ec8fb, type: 3}
   m_Name: 
@@ -2888,7 +3050,8 @@ MonoBehaviour:
   settingsPanel: {fileID: 0}
   controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
-  joysticks: []
+  joystickLeft: {fileID: 0}
+  joystickRight: {fileID: 0}
 --- !u!114 &718531965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2945,19 +3108,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 718531967}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 718531964}
-        m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
-        m_MethodName: OnButtonPress
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: X
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &718531967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3008,6 +3159,139 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95088858d9944154188d163f9da899ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &721869785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 721869786}
+  - component: {fileID: 721869789}
+  - component: {fileID: 721869788}
+  - component: {fileID: 721869787}
+  m_Layer: 5
+  m_Name: Disconnet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &721869786
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721869785}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1166832845}
+  m_Father: {fileID: 1174576825}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -79.99997, y: -173}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &721869787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721869785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 721869788}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1037058666}
+        m_TargetAssemblyTypeName: ControllerEmulation.StartClient, Assembly-CSharp
+        m_MethodName: StopClient
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &721869788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721869785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &721869789
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721869785}
+  m_CullTransparentMesh: 1
 --- !u!1 &750232688
 GameObject:
   m_ObjectHideFlags: 0
@@ -3082,6 +3366,139 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750232688}
+  m_CullTransparentMesh: 1
+--- !u!1 &760163520
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 760163521}
+  - component: {fileID: 760163524}
+  - component: {fileID: 760163523}
+  - component: {fileID: 760163522}
+  m_Layer: 5
+  m_Name: Connect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &760163521
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760163520}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 70862823}
+  m_Father: {fileID: 1174576825}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -80, y: -62}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &760163522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760163520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 760163523}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1037058666}
+        m_TargetAssemblyTypeName: ControllerEmulation.StartClient, Assembly-CSharp
+        m_MethodName: StartClientNow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &760163523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760163520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &760163524
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760163520}
   m_CullTransparentMesh: 1
 --- !u!1 &792278424
 GameObject:
@@ -3267,7 +3684,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847398946}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 371e979a7cdee2148b5b6de3319ec8fb, type: 3}
   m_Name: 
@@ -3275,7 +3692,8 @@ MonoBehaviour:
   settingsPanel: {fileID: 0}
   controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
-  joysticks: []
+  joystickLeft: {fileID: 0}
+  joystickRight: {fileID: 0}
 --- !u!114 &847398949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3332,19 +3750,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 847398951}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 847398948}
-        m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
-        m_MethodName: OnButtonPress
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Select
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &847398951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3477,7 +3883,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 900545771}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 371e979a7cdee2148b5b6de3319ec8fb, type: 3}
   m_Name: 
@@ -3485,7 +3891,8 @@ MonoBehaviour:
   settingsPanel: {fileID: 327602928}
   controllerPanel: {fileID: 1161780635}
   layoutPanel: {fileID: 1590190274}
-  joysticks: []
+  joystickLeft: {fileID: 0}
+  joystickRight: {fileID: 0}
 --- !u!114 &900545774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3530,7 +3937,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 900545773}
+      - m_Target: {fileID: 1853925892}
         m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
         m_MethodName: OnButtonPress
         m_Mode: 5
@@ -3628,7 +4035,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 922764584}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 371e979a7cdee2148b5b6de3319ec8fb, type: 3}
   m_Name: 
@@ -3636,7 +4043,8 @@ MonoBehaviour:
   settingsPanel: {fileID: 0}
   controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
-  joysticks: []
+  joystickLeft: {fileID: 0}
+  joystickRight: {fileID: 0}
 --- !u!114 &922764587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3693,19 +4101,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 922764589}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 922764586}
-        m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
-        m_MethodName: OnButtonPress
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Y
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &922764589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3754,6 +4150,51 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95088858d9944154188d163f9da899ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1037058663
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1037058665}
+  - component: {fileID: 1037058666}
+  m_Layer: 0
+  m_Name: Client
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1037058665
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037058663}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 486.9837, y: 533.0491, z: -13.415751}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1853925893}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1037058666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037058663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81c4392dbd8149ab98cbac7ba77d3b91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1104419777
@@ -3880,7 +4321,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117735687}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 371e979a7cdee2148b5b6de3319ec8fb, type: 3}
   m_Name: 
@@ -3888,7 +4329,8 @@ MonoBehaviour:
   settingsPanel: {fileID: 327602928}
   controllerPanel: {fileID: 1161780635}
   layoutPanel: {fileID: 1590190274}
-  joysticks: []
+  joystickLeft: {fileID: 0}
+  joystickRight: {fileID: 0}
 --- !u!114 &1117735690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3933,7 +4375,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1117735689}
+      - m_Target: {fileID: 1853925892}
         m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
         m_MethodName: OnButtonPress
         m_Mode: 5
@@ -4037,6 +4479,7 @@ GameObject:
   - component: {fileID: 1120171407}
   - component: {fileID: 1120171406}
   - component: {fileID: 1120171405}
+  - component: {fileID: 1120171411}
   - component: {fileID: 1120171408}
   - component: {fileID: 1120171409}
   - component: {fileID: 1120171410}
@@ -4109,19 +4552,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1120171406}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1120171409}
-        m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
-        m_MethodName: OnButtonPress
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Start
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1120171406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4180,7 +4611,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1120171403}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 371e979a7cdee2148b5b6de3319ec8fb, type: 3}
   m_Name: 
@@ -4188,7 +4619,8 @@ MonoBehaviour:
   settingsPanel: {fileID: 0}
   controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
-  joysticks: []
+  joystickLeft: {fileID: 0}
+  joystickRight: {fileID: 0}
 --- !u!114 &1120171410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4201,6 +4633,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19fa655aadce45a4815a7cb6f7fc7be0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1120171411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120171403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1853925892}
+          m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
+          m_MethodName: OnButtonPress
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Start
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1853925892}
+          m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
+          m_MethodName: OnButtonRelease
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Start
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1161780635
 GameObject:
   m_ObjectHideFlags: 0
@@ -4277,6 +4754,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161780635}
   m_CullTransparentMesh: 1
+--- !u!1 &1166832844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1166832845}
+  - component: {fileID: 1166832847}
+  - component: {fileID: 1166832846}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1166832845
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166832844}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 721869786}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1166832846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166832844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Disconnect
+--- !u!222 &1166832847
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166832844}
+  m_CullTransparentMesh: 1
 --- !u!1 &1174576824
 GameObject:
   m_ObjectHideFlags: 0
@@ -4318,6 +4874,8 @@ RectTransform:
   - {fileID: 282941307}
   - {fileID: 2009326372}
   - {fileID: 684190802}
+  - {fileID: 760163521}
+  - {fileID: 721869786}
   m_Father: {fileID: 1161780636}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4529,6 +5087,7 @@ GameObject:
   - component: {fileID: 1217093978}
   - component: {fileID: 1217093977}
   - component: {fileID: 1217093976}
+  - component: {fileID: 1217093982}
   - component: {fileID: 1217093979}
   - component: {fileID: 1217093980}
   - component: {fileID: 1217093981}
@@ -4601,19 +5160,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1217093977}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1217093980}
-        m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
-        m_MethodName: OnButtonPress
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Select
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1217093977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4672,7 +5219,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1217093974}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 371e979a7cdee2148b5b6de3319ec8fb, type: 3}
   m_Name: 
@@ -4680,7 +5227,8 @@ MonoBehaviour:
   settingsPanel: {fileID: 0}
   controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
-  joysticks: []
+  joystickLeft: {fileID: 0}
+  joystickRight: {fileID: 0}
 --- !u!114 &1217093981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4693,6 +5241,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19fa655aadce45a4815a7cb6f7fc7be0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1217093982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217093974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1853925892}
+          m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
+          m_MethodName: OnButtonPress
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Select
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1853925892}
+          m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
+          m_MethodName: OnButtonRelease
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Select
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1221912621
 GameObject:
   m_ObjectHideFlags: 0
@@ -4956,6 +5549,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263993773}
   m_CullTransparentMesh: 1
+--- !u!1 &1327195552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1327195553}
+  - component: {fileID: 1327195554}
+  m_Layer: 0
+  m_Name: Dispatcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1327195553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327195552}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 220.38203, y: 196.68073, z: -2.8558013}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1327195554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327195552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b3b34b6c762cb47960972144e92180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1341406082
 GameObject:
   m_ObjectHideFlags: 0
@@ -4968,6 +5605,7 @@ GameObject:
   - component: {fileID: 1341406086}
   - component: {fileID: 1341406085}
   - component: {fileID: 1341406084}
+  - component: {fileID: 1341406090}
   - component: {fileID: 1341406087}
   - component: {fileID: 1341406088}
   - component: {fileID: 1341406089}
@@ -5040,19 +5678,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1341406085}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1341406088}
-        m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
-        m_MethodName: OnButtonPress
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: LB
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1341406085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5111,7 +5737,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1341406082}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 371e979a7cdee2148b5b6de3319ec8fb, type: 3}
   m_Name: 
@@ -5119,7 +5745,8 @@ MonoBehaviour:
   settingsPanel: {fileID: 0}
   controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
-  joysticks: []
+  joystickLeft: {fileID: 0}
+  joystickRight: {fileID: 0}
 --- !u!114 &1341406089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5132,6 +5759,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19fa655aadce45a4815a7cb6f7fc7be0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1341406090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341406082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1853925892}
+          m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
+          m_MethodName: OnButtonPress
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: LB
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1853925892}
+          m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
+          m_MethodName: OnButtonRelease
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: LB
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1453376781
 GameObject:
   m_ObjectHideFlags: 0
@@ -5360,6 +6032,7 @@ GameObject:
   - component: {fileID: 1543265954}
   - component: {fileID: 1543265953}
   - component: {fileID: 1543265952}
+  - component: {fileID: 1543265958}
   - component: {fileID: 1543265955}
   - component: {fileID: 1543265956}
   - component: {fileID: 1543265957}
@@ -5432,19 +6105,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1543265953}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1543265956}
-        m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
-        m_MethodName: OnButtonPress
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: A
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1543265953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5503,7 +6164,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543265950}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 371e979a7cdee2148b5b6de3319ec8fb, type: 3}
   m_Name: 
@@ -5511,7 +6172,8 @@ MonoBehaviour:
   settingsPanel: {fileID: 0}
   controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
-  joysticks: []
+  joystickLeft: {fileID: 0}
+  joystickRight: {fileID: 0}
 --- !u!114 &1543265957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5524,6 +6186,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19fa655aadce45a4815a7cb6f7fc7be0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1543265958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543265950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1853925892}
+          m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
+          m_MethodName: OnButtonPress
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: A
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1853925892}
+          m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
+          m_MethodName: OnButtonRelease
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: A
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1590190274
 GameObject:
   m_ObjectHideFlags: 0
@@ -5699,6 +6406,7 @@ GameObject:
   - component: {fileID: 1689861028}
   - component: {fileID: 1689861027}
   - component: {fileID: 1689861026}
+  - component: {fileID: 1689861032}
   - component: {fileID: 1689861029}
   - component: {fileID: 1689861030}
   - component: {fileID: 1689861031}
@@ -5771,19 +6479,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1689861027}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1689861030}
-        m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
-        m_MethodName: OnButtonPress
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: RB
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1689861027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5842,7 +6538,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1689861024}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 371e979a7cdee2148b5b6de3319ec8fb, type: 3}
   m_Name: 
@@ -5850,7 +6546,8 @@ MonoBehaviour:
   settingsPanel: {fileID: 0}
   controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
-  joysticks: []
+  joystickLeft: {fileID: 0}
+  joystickRight: {fileID: 0}
 --- !u!114 &1689861031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5863,6 +6560,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19fa655aadce45a4815a7cb6f7fc7be0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1689861032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689861024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1853925892}
+          m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
+          m_MethodName: OnButtonPress
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: RB
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1853925892}
+          m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
+          m_MethodName: OnButtonRelease
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: RB
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1709367130
 GameObject:
   m_ObjectHideFlags: 0
@@ -6013,6 +6755,7 @@ GameObject:
   - component: {fileID: 1779001781}
   - component: {fileID: 1779001780}
   - component: {fileID: 1779001779}
+  - component: {fileID: 1779001784}
   - component: {fileID: 1779001782}
   - component: {fileID: 1779001783}
   m_Layer: 5
@@ -6084,19 +6827,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1779001780}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1779001782}
-        m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
-        m_MethodName: OnButtonPress
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Settings
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1779001780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6142,7 +6873,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779001776}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 371e979a7cdee2148b5b6de3319ec8fb, type: 3}
   m_Name: 
@@ -6150,7 +6881,8 @@ MonoBehaviour:
   settingsPanel: {fileID: 327602928}
   controllerPanel: {fileID: 1161780635}
   layoutPanel: {fileID: 1590190274}
-  joysticks: []
+  joystickLeft: {fileID: 0}
+  joystickRight: {fileID: 0}
 --- !u!114 &1779001783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6163,6 +6895,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19fa655aadce45a4815a7cb6f7fc7be0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1779001784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779001776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1853925892}
+          m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
+          m_MethodName: OnButtonPress
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Settings
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1853925892}
+          m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
+          m_MethodName: OnButtonRelease
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1801464637
 GameObject:
   m_ObjectHideFlags: 0
@@ -6211,7 +6988,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801464637}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 371e979a7cdee2148b5b6de3319ec8fb, type: 3}
   m_Name: 
@@ -6219,7 +6996,8 @@ MonoBehaviour:
   settingsPanel: {fileID: 0}
   controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
-  joysticks: []
+  joystickLeft: {fileID: 0}
+  joystickRight: {fileID: 0}
 --- !u!114 &1801464640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6277,7 +7055,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801464639}
+      - m_Target: {fileID: 1853925892}
         m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
         m_MethodName: OnButtonPress
         m_Mode: 5
@@ -6626,6 +7404,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1834220251}
   m_CullTransparentMesh: 1
+--- !u!1 &1853925891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1853925893}
+  - component: {fileID: 1853925892}
+  m_Layer: 0
+  m_Name: ButtonHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1853925892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853925891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371e979a7cdee2148b5b6de3319ec8fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settingsPanel: {fileID: 327602928}
+  controllerPanel: {fileID: 1161780635}
+  layoutPanel: {fileID: 1590190274}
+  joystickLeft: {fileID: 2009326373}
+  joystickRight: {fileID: 684190806}
+--- !u!4 &1853925893
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853925891}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 118.56726, y: -77.066956, z: 5.5529757}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1037058665}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1856226134
 GameObject:
   m_ObjectHideFlags: 0
@@ -6981,7 +7808,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904859428}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 371e979a7cdee2148b5b6de3319ec8fb, type: 3}
   m_Name: 
@@ -6989,7 +7816,8 @@ MonoBehaviour:
   settingsPanel: {fileID: 0}
   controllerPanel: {fileID: 0}
   layoutPanel: {fileID: 0}
-  joysticks: []
+  joystickLeft: {fileID: 0}
+  joystickRight: {fileID: 0}
 --- !u!114 &1904859431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7046,19 +7874,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1904859433}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1904859430}
-        m_TargetAssemblyTypeName: UniversalButtonHandler, Assembly-CSharp
-        m_MethodName: OnButtonPress
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: RB
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1904859433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7258,6 +8074,7 @@ GameObject:
   - component: {fileID: 2009326375}
   - component: {fileID: 2009326374}
   - component: {fileID: 2009326373}
+  - component: {fileID: 2009326377}
   m_Layer: 5
   m_Name: Left-Stick
   m_TagString: Untagged
@@ -7372,6 +8189,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2009326371}
   m_CullTransparentMesh: 1
+--- !u!114 &2009326377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009326371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls: []
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls: []
+  - eventID: 13
+    callback:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &2094421269
 GameObject:
   m_ObjectHideFlags: 0
@@ -7573,3 +8415,5 @@ SceneRoots:
   - {fileID: 580462297}
   - {fileID: 1207503705}
   - {fileID: 1221912625}
+  - {fileID: 1037058665}
+  - {fileID: 1327195553}

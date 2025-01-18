@@ -1,0 +1,8 @@
+C:/Users/PrismZ/Documents/GitHub/HCIController/hci/.utmp/Debug/1o2o2y6b/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/PrismZ/Documents/GitHub/HCIController/hci/.utmp/Debug/1o2o2y6b/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Users/PrismZ/Documents/GitHub/HCIController/hci/.utmp/Debug/1o2o2y6b/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Users/PrismZ/Documents/GitHub/HCIController/hci/.utmp/Debug/1o2o2y6b/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Users/PrismZ/Documents/GitHub/HCIController/hci/.utmp/Debug/1o2o2y6b/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
+C:/Users/PrismZ/Documents/GitHub/HCIController/hci/.utmp/Debug/1o2o2y6b/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+C:/Users/PrismZ/Documents/GitHub/HCIController/hci/.utmp/Debug/1o2o2y6b/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+C:/Users/PrismZ/Documents/GitHub/HCIController/hci/.utmp/Debug/1o2o2y6b/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir

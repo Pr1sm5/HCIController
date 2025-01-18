@@ -9,7 +9,7 @@ public class ControllerButtonHandler : MonoBehaviour
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
-        buttonHandler = FindObjectOfType<UniversalButtonHandler>();
+        buttonHandler = FindAnyObjectByType<UniversalButtonHandler>();
     }
 
 
