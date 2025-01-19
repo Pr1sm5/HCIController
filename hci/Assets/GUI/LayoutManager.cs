@@ -100,12 +100,6 @@ public class LayoutManager : MonoBehaviour
         Debug.Log("=== LOAD LAYOUT START ===");
         Debug.Log($"Versuche Layout zu laden: {layoutName}");
 
-        if (layoutName == "Standard")
-        {
-            ResetToDefaultLayout();
-            return;
-        }
-
         // Ausgabe aller verfügbaren Controller-Buttons
         Debug.Log($"controllerButtons enthält {controllerButtons.Count} Elemente:");
         foreach (GameObject button in controllerButtons)
@@ -164,32 +158,58 @@ public class LayoutManager : MonoBehaviour
     }
 
     private void LoadLayoutsFromFile()
+{
+    try
     {
-        try
+        if (File.Exists(layoutPath))
         {
-            if (File.Exists(layoutPath))
-            {
-                string json = File.ReadAllText(layoutPath);
-                SerializableLayoutList loadedLayouts = JsonUtility.FromJson<SerializableLayoutList>(json);
-                savedLayouts = loadedLayouts.layouts;
-                Debug.Log($"Layouts erfolgreich geladen: {json}");
-            }
-            else
-            {
-                Debug.LogWarning("Keine Layout-Datei gefunden. Starte mit leerer Layout-Liste.");
-            }
+            string json = File.ReadAllText(layoutPath);
+            SerializableLayoutList loadedLayouts = JsonUtility.FromJson<SerializableLayoutList>(json);
+            savedLayouts = loadedLayouts.layouts;
+            Debug.Log($"Layouts erfolgreich geladen: {json}");
         }
-        catch (System.Exception e)
+        else
         {
-            Debug.LogError($"Fehler beim Laden der Layouts: {e.Message}");
+            Debug.LogWarning("Keine Layout-Datei gefunden. Erstelle Standard-Layout.");
+            CreateDefaultLayout();
+            SaveLayoutsToFile();
         }
     }
+    catch (System.Exception e)
+    {
+        Debug.LogError($"Fehler beim Laden der Layouts: {e.Message}");
+    }
+}
 
-    private void ResetToDefaultLayout()
+    private void CreateDefaultLayout()
     {
-        Debug.Log("Setze Standard-Layout");
-        // Standard-Positionen hier definieren
+        ButtonLayout defaultLayout = new ButtonLayout
+        {
+            layoutName = "Standard",
+            buttons = new List<ButtonData>
+            {
+                new ButtonData { buttonName = "A", position = new Vector2(670, -154) },
+                new ButtonData { buttonName = "B", position = new Vector2(831, 13) },
+                new ButtonData { buttonName = "X", position = new Vector2(509, 13) },
+                new ButtonData { buttonName = "Y", position = new Vector2(670, 174) },
+                new ButtonData { buttonName = "Start", position = new Vector2(41, 201) },
+                new ButtonData { buttonName = "Back", position = new Vector2(-215, 201) },
+                new ButtonData { buttonName = "LB", position = new Vector2(-580, 302) },
+                new ButtonData { buttonName = "RB", position = new Vector2(420, 284) }, 
+                new ButtonData { buttonName = "Settings", position = new Vector2(-71, 90) }
+            },
+            sticks = new List<StickData>
+            {
+                new StickData { stickName = "Left-Stick", position = new Vector2(-650, -89) },
+                new StickData { stickName = "Right-Stick", position = new Vector2(268, -201) }  
+            }
+        };
+
+
+        savedLayouts.Add(defaultLayout);
+        Debug.Log("Standard-Layout erstellt.");
     }
+    
 }
 
 [System.Serializable]

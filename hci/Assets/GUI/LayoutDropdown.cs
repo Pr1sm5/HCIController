@@ -28,9 +28,6 @@ public class LayoutDropdown : MonoBehaviour
         layoutDropdown.ClearOptions();
         List<string> options = new List<string>();
 
-        // Standard hinzufügen
-        options.Add("Standard");
-
         // Layout-Namen hinzufügen
         foreach (ButtonLayout layout in layoutManager.savedLayouts)
         {
