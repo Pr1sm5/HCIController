@@ -5,45 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="307612b3-ad79-440a-a090-aedbee4a60f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/GUI/ControllerInputDataGUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/GUI/ControllerInputDataGUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/GUI/StartClient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/GUI/StartClient.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.hci/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.hci/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/tools/release/arm64-v8a/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/tools/release/arm64-v8a/compile_commands.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GUI/ControllerButtonHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI/ControllerButtonHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.utmp/Debug/1o2o2y6b/arm64-v8a/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/Debug/1o2o2y6b/arm64-v8a/configure_fingerprint.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI/Client.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GUI/UniversalButtonHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI/UniversalButtonHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/PerformanceTestRunInfo.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/PerformanceTestRunInfo.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/PerformanceTestRunSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/PerformanceTestRunSettings.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Controller.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Controller.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Build Profiles/New Android™ Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Build Profiles/New Android™ Profile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/server client emu/Client.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/server client emu/Client.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ControllerEmu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ControllerEmu.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ControllerInputData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/server client emu/ControllerInputData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/server client emu/Nefarius.ViGEm.Client.1.21.256.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/server client emu/Nefarius.ViGEm.Client.1.21.256/.signature.p7s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/server client emu/Nefarius.ViGEm.Client.1.21.256/Nefarius.ViGEm.Client.1.21.256.nupkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/server client emu/Nefarius.ViGEm.Client.1.21.256/Nefarius.ViGEm.Client.1.21.256.nupkg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/server client emu/Nefarius.ViGEm.Client.1.21.256/ViGEm_Icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/server client emu/Nefarius.ViGEm.Client.1.21.256/ViGEm_Icon.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/server client emu/Nefarius.ViGEm.Client.1.21.256/lib.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/server client emu/Nefarius.ViGEm.Client.1.21.256/lib/netstandard2.0.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/server client emu/Nefarius.ViGEm.Client.1.21.256/lib/netstandard2.0/Nefarius.ViGEm.Client.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/server client emu/Nefarius.ViGEm.Client.1.21.256/lib/netstandard2.0/Nefarius.ViGEm.Client.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/server client emu/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/server client emu/Program.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/server client emu/Server.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/server client emu/Server.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +24,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/08b9c6b4d03d48739ea43df4acfa6a4f73a00/fc/dcfeb16f/IBarcodeReader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c08eccfa13ce4e9da1b670057c10656118600/5d/8e525826/WebCamTexture.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cdbf1342a3f14ce9b6eeba5c4f7941717da00/64/e35379f7/IBarcodeReader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d44b17e136d09081da1e8fd0e8c83fde60e11818b9f2442d7ed8cb733fae895e/System.Collections.Generic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GUI/IPData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GUI/SceneController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GUI/UnityMainThreadDispatcher.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy/Editor/ViewSwitcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Runtime/UGUI/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
@@ -157,6 +129,7 @@
       <workItem from="1737193678594" duration="10700000" />
       <workItem from="1737206417523" duration="911000" />
       <workItem from="1737207399897" duration="6673000" />
+      <workItem from="1737286547051" duration="11857000" />
     </task>
     <servers />
   </component>

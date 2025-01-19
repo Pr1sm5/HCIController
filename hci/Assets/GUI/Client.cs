@@ -14,6 +14,8 @@ public class Client : MonoBehaviour
     private bool _isRunning;
     private Thread _clientThread;
     private Action<string> _onServerResponse;
+    private string ip = "127.0.0.1";
+    private int port = 12345;
 
     private ControllerInputData _data;
 
@@ -21,6 +23,8 @@ public class Client : MonoBehaviour
     {
         _data = data;
         _data.OnInputChanged += SendData;
+        ip = IPData.Instance.ip;
+        port = IPData.Instance.port;
     }
 
     public void StartClient()
@@ -51,7 +55,7 @@ public class Client : MonoBehaviour
             {
                 Debug.Log("Attempting to connect to server...");
                 _socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-                _socket.Connect("192.168.178.94", 12345); // Connect to the server
+                _socket.Connect(ip, port); // Connect to the server
                 Debug.Log("Connected to server.");
 
                 // Get network stream and writer

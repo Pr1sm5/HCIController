@@ -20,7 +20,7 @@ public class UniversalButtonHandler : MonoBehaviour
     private short _rightStickX;
 
     private float _lastUpdateTime = 0f;
-    private float _joystickUpdateInterval = 0.1f;
+    private float _joystickUpdateInterval = 0.005f;
     
     private void Start()
     {
@@ -111,6 +111,7 @@ public class UniversalButtonHandler : MonoBehaviour
         InputData.LeftThumbY = _leftStickY;
         InputData.RightThumbX = _rightStickX;
         InputData.RightThumbY = _rightStickY;
+        //Debug.Log($"LeftX {InputData.LeftThumbX} ### LeftY {InputData.LeftThumbY} \n RightX {InputData.RightThumbX} ### RightY {InputData.RightThumbY}");
     }
     
     public void OnButtonPress(string buttonName)
