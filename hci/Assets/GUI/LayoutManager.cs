@@ -16,6 +16,7 @@ public class ButtonData
     public string buttonName;
     public Vector2 position;
     public float scale;
+    public bool isActive; // Aktivierungsstatus
 }
 
 [System.Serializable]
@@ -24,6 +25,7 @@ public class StickData
     public string stickName;
     public Vector2 position;
     public float scale;
+    public bool isActive; // Aktivierungsstatus
 }
 
 public class LayoutManager : MonoBehaviour
@@ -47,39 +49,28 @@ public class LayoutManager : MonoBehaviour
         Debug.Log("=== SAVE LAYOUT START ===");
         Debug.Log($"Layout-Name zum Speichern: {layoutName}");
 
-        // Überprüfe auf existierendes Layout
         int existingLayoutIndex = savedLayouts.FindIndex(l => l.layoutName == layoutName);
         ButtonLayout newLayout = new ButtonLayout { layoutName = layoutName };
 
-        Debug.Log($"Anzahl der Layout-Buttons: {layoutButtons.Count}");
-
-        // Überprüfe, ob die Liste korrekt initialisiert ist
-        if (layoutButtons == null || layoutButtons.Count == 0)
-        {
-            Debug.LogError("Layout-Buttons Liste ist leer oder null!");
-            return;
-        }
-
-        // Speichere die Button-Daten
         foreach (GameObject layoutButton in layoutButtons)
         {
             if (layoutButton == null) continue;
 
             RectTransform rectTransform = layoutButton.GetComponent<RectTransform>();
             Vector2 currentPos = rectTransform.anchoredPosition;
-            float currentScale = rectTransform.localScale.x; // Annahme: Uniform Scale
+            float currentScale = rectTransform.localScale.x;
 
             ButtonData buttonData = new ButtonData
             {
                 buttonName = layoutButton.name,
                 position = currentPos,
-                scale = currentScale
+                scale = currentScale,
+                isActive = layoutButton.activeSelf // Aktivierungsstatus speichern
             };
 
             newLayout.buttons.Add(buttonData);
         }
 
-        // Speichere die Stick-Daten
         foreach (GameObject stick in layoutSticks)
         {
             if (stick == null) continue;
@@ -92,23 +83,20 @@ public class LayoutManager : MonoBehaviour
             {
                 stickName = stick.name,
                 position = currentPos,
-                scale = currentScale
+                scale = currentScale,
+                isActive = stick.activeSelf // Aktivierungsstatus speichern
             };
 
             newLayout.sticks.Add(stickData);
         }
 
-
-        // Update oder füge neues Layout hinzu
         if (existingLayoutIndex >= 0)
         {
             savedLayouts[existingLayoutIndex] = newLayout;
-            Debug.Log($"Layout '{layoutName}' aktualisiert mit {newLayout.buttons.Count} Buttons");
         }
         else
         {
             savedLayouts.Add(newLayout);
-            Debug.Log($"Neues Layout '{layoutName}' erstellt mit {newLayout.buttons.Count} Buttons");
         }
 
         SaveLayoutsToFile();
@@ -120,14 +108,6 @@ public class LayoutManager : MonoBehaviour
         Debug.Log("=== LOAD LAYOUT START ===");
         Debug.Log($"Versuche Layout zu laden: {layoutName}");
 
-        // Ausgabe aller verfügbaren Controller-Buttons
-        Debug.Log($"controllerButtons enthält {controllerButtons.Count} Elemente:");
-        foreach (GameObject button in controllerButtons)
-        {
-            Debug.Log($"Controller-Button: {button?.name}");
-        }
-
-        // Suche das Layout
         ButtonLayout layoutToLoad = savedLayouts.Find(layout => layout.layoutName == layoutName);
         if (layoutToLoad == null)
         {
@@ -135,9 +115,6 @@ public class LayoutManager : MonoBehaviour
             return;
         }
 
-        Debug.Log($"Layout gefunden mit {layoutToLoad.buttons.Count} Buttons");
-
-        // Bearbeite nur die Controller-Buttons
         foreach (ButtonData buttonData in layoutToLoad.buttons)
         {
             GameObject controllerButton = controllerButtons.Find(b => b.name == buttonData.buttonName);
@@ -145,11 +122,11 @@ public class LayoutManager : MonoBehaviour
             {
                 RectTransform rectTransform = controllerButton.GetComponent<RectTransform>();
                 rectTransform.anchoredPosition = buttonData.position;
-                rectTransform.localScale = Vector3.one * buttonData.scale; // Uniform Scale
+                rectTransform.localScale = Vector3.one * buttonData.scale;
+                controllerButton.SetActive(buttonData.isActive); // Aktivierungsstatus laden
             }
         }
 
-        // Bearbeite die Sticks
         foreach (StickData stickData in layoutToLoad.sticks)
         {
             GameObject stick = controllerSticks.Find(s => s.name == stickData.stickName);
@@ -157,17 +134,13 @@ public class LayoutManager : MonoBehaviour
             {
                 RectTransform rectTransform = stick.GetComponent<RectTransform>();
                 rectTransform.anchoredPosition = stickData.position;
-                rectTransform.localScale = Vector3.one * stickData.scale; // Uniform Scale
+                rectTransform.localScale = Vector3.one * stickData.scale;
+                stick.SetActive(stickData.isActive); // Aktivierungsstatus laden
             }
         }
 
-
         Debug.Log("=== LOAD LAYOUT END ===");
     }
-
-
-
-
     private void SaveLayoutsToFile()
     {
         try

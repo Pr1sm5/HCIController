@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ScaleSliderManager : MonoBehaviour
 {
-    public Dropdown dropdownMenu; // Das Dropdown-Menü
+    public TMP_Dropdown dropdownMenu; // Das TMP Dropdown-Menü
     public Slider scaleSlider; // Der Skalierungs-Slider
     public Text sliderValueText; // (Optional) Text zur Anzeige des aktuellen Werts
     public List<GameObject> targetObjects; // Liste aller Buttons oder Sticks
@@ -32,13 +33,15 @@ public class ScaleSliderManager : MonoBehaviour
     // Fülle das Dropdown-Menü mit den Namen der Zielobjekte
     private void PopulateDropdown()
     {
-        dropdownMenu.options.Clear();
+        dropdownMenu.ClearOptions();
 
+        List<string> options = new List<string>();
         foreach (GameObject obj in targetObjects)
         {
-            dropdownMenu.options.Add(new Dropdown.OptionData(obj.name));
+            options.Add(obj.name);
         }
 
+        dropdownMenu.AddOptions(options);
         dropdownMenu.RefreshShownValue();
     }
 
