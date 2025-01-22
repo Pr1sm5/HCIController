@@ -15,6 +15,7 @@ public class ButtonData
 {
     public string buttonName;
     public Vector2 position;
+    public float scale;
 }
 
 [System.Serializable]
@@ -22,6 +23,7 @@ public class StickData
 {
     public string stickName;
     public Vector2 position;
+    public float scale;
 }
 
 public class LayoutManager : MonoBehaviour
@@ -29,13 +31,14 @@ public class LayoutManager : MonoBehaviour
     public List<ButtonLayout> savedLayouts = new List<ButtonLayout>();
     public List<GameObject> layoutButtons; // Buttons im Layout-Panel
     public List<GameObject> controllerButtons; // Buttons im Controller-Panel
-    public List<GameObject> sticks; // Sticks im Layout
-    private string layoutPath;
+    public List<GameObject> layoutSticks; // Sticks im Layout
+    public List<GameObject> controllerSticks; // Sticks im Layout
+    private string _layoutPath;
 
     void Awake()
     {
-        layoutPath = Path.Combine(Application.persistentDataPath, "layouts.json");
-        Debug.Log($"Layout-Dateipfad: {layoutPath}");
+        _layoutPath = Path.Combine(Application.persistentDataPath, "layouts.json");
+        Debug.Log($"Layout-Dateipfad: {_layoutPath}");
         LoadLayoutsFromFile();
     }
 
@@ -60,24 +63,41 @@ public class LayoutManager : MonoBehaviour
         // Speichere die Button-Daten
         foreach (GameObject layoutButton in layoutButtons)
         {
-            if (layoutButton == null)
-            {
-                Debug.LogError("Ein Button in der Layout-Buttons Liste ist null!");
-                continue;
-            }
+            if (layoutButton == null) continue;
 
             RectTransform rectTransform = layoutButton.GetComponent<RectTransform>();
             Vector2 currentPos = rectTransform.anchoredPosition;
+            float currentScale = rectTransform.localScale.x; // Annahme: Uniform Scale
 
             ButtonData buttonData = new ButtonData
             {
                 buttonName = layoutButton.name,
-                position = currentPos
+                position = currentPos,
+                scale = currentScale
             };
 
             newLayout.buttons.Add(buttonData);
-            Debug.Log($"Speichere Button '{layoutButton.name}' an Position: {currentPos}");
         }
+
+        // Speichere die Stick-Daten
+        foreach (GameObject stick in layoutSticks)
+        {
+            if (stick == null) continue;
+
+            RectTransform rectTransform = stick.GetComponent<RectTransform>();
+            Vector2 currentPos = rectTransform.anchoredPosition;
+            float currentScale = rectTransform.localScale.x;
+
+            StickData stickData = new StickData
+            {
+                stickName = stick.name,
+                position = currentPos,
+                scale = currentScale
+            };
+
+            newLayout.sticks.Add(stickData);
+        }
+
 
         // Update oder füge neues Layout hinzu
         if (existingLayoutIndex >= 0)
@@ -120,21 +140,27 @@ public class LayoutManager : MonoBehaviour
         // Bearbeite nur die Controller-Buttons
         foreach (ButtonData buttonData in layoutToLoad.buttons)
         {
-            Debug.Log($"Versuche Controller-Button zuzuordnen: {buttonData.buttonName}");
-
             GameObject controllerButton = controllerButtons.Find(b => b.name == buttonData.buttonName);
             if (controllerButton != null)
             {
                 RectTransform rectTransform = controllerButton.GetComponent<RectTransform>();
-                Vector2 oldPos = rectTransform.anchoredPosition;
                 rectTransform.anchoredPosition = buttonData.position;
-                Debug.Log($"Controller-Button '{buttonData.buttonName}' Position: {oldPos} -> {buttonData.position}");
-            }
-            else
-            {
-                Debug.LogError($"Controller-Button '{buttonData.buttonName}' nicht in controllerButtons gefunden!");
+                rectTransform.localScale = Vector3.one * buttonData.scale; // Uniform Scale
             }
         }
+
+        // Bearbeite die Sticks
+        foreach (StickData stickData in layoutToLoad.sticks)
+        {
+            GameObject stick = controllerSticks.Find(s => s.name == stickData.stickName);
+            if (stick != null)
+            {
+                RectTransform rectTransform = stick.GetComponent<RectTransform>();
+                rectTransform.anchoredPosition = stickData.position;
+                rectTransform.localScale = Vector3.one * stickData.scale; // Uniform Scale
+            }
+        }
+
 
         Debug.Log("=== LOAD LAYOUT END ===");
     }
@@ -148,7 +174,7 @@ public class LayoutManager : MonoBehaviour
         {
             SerializableLayoutList listToSave = new SerializableLayoutList { layouts = savedLayouts };
             string json = JsonUtility.ToJson(listToSave, true);
-            File.WriteAllText(layoutPath, json);
+            File.WriteAllText(_layoutPath, json);
             Debug.Log($"Layouts erfolgreich gespeichert: {json}");
         }
         catch (System.Exception e)
@@ -161,9 +187,9 @@ public class LayoutManager : MonoBehaviour
 {
     try
     {
-        if (File.Exists(layoutPath))
+        if (File.Exists(_layoutPath))
         {
-            string json = File.ReadAllText(layoutPath);
+            string json = File.ReadAllText(_layoutPath);
             SerializableLayoutList loadedLayouts = JsonUtility.FromJson<SerializableLayoutList>(json);
             savedLayouts = loadedLayouts.layouts;
             Debug.Log($"Layouts erfolgreich geladen: {json}");
@@ -188,20 +214,20 @@ public class LayoutManager : MonoBehaviour
             layoutName = "Standard",
             buttons = new List<ButtonData>
             {
-                new ButtonData { buttonName = "A", position = new Vector2(670, -154) },
-                new ButtonData { buttonName = "B", position = new Vector2(831, 13) },
-                new ButtonData { buttonName = "X", position = new Vector2(509, 13) },
-                new ButtonData { buttonName = "Y", position = new Vector2(670, 174) },
-                new ButtonData { buttonName = "Start", position = new Vector2(41, 201) },
-                new ButtonData { buttonName = "Back", position = new Vector2(-215, 201) },
-                new ButtonData { buttonName = "LB", position = new Vector2(-580, 302) },
-                new ButtonData { buttonName = "RB", position = new Vector2(420, 284) }, 
-                new ButtonData { buttonName = "Settings", position = new Vector2(-71, 90) }
+                new ButtonData { buttonName = "A", position = new Vector2(670, -154), scale = 0.4f },
+                new ButtonData { buttonName = "B", position = new Vector2(831, 13), scale = 0.4f },
+                new ButtonData { buttonName = "X", position = new Vector2(509, 13), scale = 0.4f },
+                new ButtonData { buttonName = "Y", position = new Vector2(670, 174), scale = 0.4f },
+                new ButtonData { buttonName = "Start", position = new Vector2(41, 201), scale = 0.25f },
+                new ButtonData { buttonName = "Back", position = new Vector2(-215, 201), scale = 0.25f },
+                new ButtonData { buttonName = "LB", position = new Vector2(-580, 302), scale = 0.5f },
+                new ButtonData { buttonName = "RB", position = new Vector2(420, 284), scale = 0.5f }, 
+                new ButtonData { buttonName = "Settings", position = new Vector2(-71, 90), scale = 0.3f }
             },
             sticks = new List<StickData>
             {
-                new StickData { stickName = "Left-Stick", position = new Vector2(-650, -89) },
-                new StickData { stickName = "Right-Stick", position = new Vector2(268, -201) }  
+                new StickData { stickName = "Left-Stick", position = new Vector2(-650, -89), scale = 0.75f },
+                new StickData { stickName = "Right-Stick", position = new Vector2(268, -201), scale = 0.75f }  
             }
         };
 

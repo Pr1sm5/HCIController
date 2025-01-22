@@ -5,12 +5,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="307612b3-ad79-440a-a090-aedbee4a60f1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/.cmake/api/v1/query/client-agp/cache-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/.cmake/api/v1/query/client-agp/cmakeFiles-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/.cmake/api/v1/query/client-agp/codemodel-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/.cmake/api/v1/reply/directory-.-RelWithDebInfo-d0094a50bb2071803777.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/.cmake/api/v1/reply/directory-FramePacing-RelWithDebInfo-7f9c8865fd027a154c90.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/.cmake/api/v1/reply/directory-GameActivity-RelWithDebInfo-3edf2ef9e25ca0503118.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/.ninja_deps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/.ninja_log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdC/CMakeCCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdCXX/CMakeCXXCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/rules.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/FramePacing/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/additional_project_files.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/android_gradle_build.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/android_gradle_build_mini.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/build.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/build_file_index.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/compile_commands.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/compile_commands.json.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/configure_fingerprint.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/metadata_generation_command.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/prefab_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/symbol_folder_index.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/hash_key.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/prefab/arm64-v8a/prefab/lib/aarch64-linux-android/cmake/game-activity/game-activityConfig.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/prefab/arm64-v8a/prefab/lib/aarch64-linux-android/cmake/games-frame-pacing/games-frame-pacingConfig.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/prefab/arm64-v8a/prefab/lib/aarch64-linux-android/cmake/games-frame-pacing/games-frame-pacingConfigVersion.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GUI/ScaleSliderManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GUI/ScaleSliderManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.hci/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.hci/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/Debug/1o2o2y6b/arm64-v8a/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/Debug/1o2o2y6b/arm64-v8a/configure_fingerprint.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GUI/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI/Client.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.utmp/tools/release/arm64-v8a/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/tools/release/arm64-v8a/compile_commands.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DefaultVolumeProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DefaultVolumeProfile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DefaultVolumeProfile.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DefaultVolumeProfile.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI/LayoutManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI/LayoutManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI/SaveLayoutPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI/SaveLayoutPanel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GUI/UniversalButtonHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI/UniversalButtonHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Controller.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Controller.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,12 +81,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/08b9c6b4d03d48739ea43df4acfa6a4f73a00/fc/dcfeb16f/IBarcodeReader.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c08eccfa13ce4e9da1b670057c10656118600/5d/8e525826/WebCamTexture.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cdbf1342a3f14ce9b6eeba5c4f7941717da00/64/e35379f7/IBarcodeReader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d44b17e136d09081da1e8fd0e8c83fde60e11818b9f2442d7ed8cb733fae895e/System.Collections.Generic.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/GUI/IPData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/GUI/SceneController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GUI/UnityMainThreadDispatcher.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy/Editor/ViewSwitcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Runtime/UGUI/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
@@ -63,7 +115,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../Unity HCI test build\hci_Controller.exe" />
+      <option name="EXE_PATH" value="$USER_HOME$/Unity HCI test build\hci_Controller.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\PrismZ\Documents\Unity HCI test build" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -71,7 +123,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity\6000.0.32f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.32f1-x86_64\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;C:\Users\Anwender\OneDrive\Kot\Semester 3\HCI\hci&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Anwender\OneDrive\Kot\Semester 3\HCI\hci" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -79,7 +131,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity\6000.0.32f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.32f1-x86_64\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;C:\Users\Anwender\OneDrive\Kot\Semester 3\HCI\hci&quot; -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Anwender\OneDrive\Kot\Semester 3\HCI\hci" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -91,6 +143,9 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
       <option name="selectedOptions">
         <list />
       </option>
@@ -101,6 +156,9 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
       <option name="selectedOptions">
         <list />
       </option>
@@ -129,7 +187,7 @@
       <workItem from="1737193678594" duration="10700000" />
       <workItem from="1737206417523" duration="911000" />
       <workItem from="1737207399897" duration="6673000" />
-      <workItem from="1737286547051" duration="11857000" />
+      <workItem from="1737548289944" duration="10767000" />
     </task>
     <servers />
   </component>

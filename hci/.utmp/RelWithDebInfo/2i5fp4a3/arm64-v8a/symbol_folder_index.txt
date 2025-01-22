@@ -1,0 +1,1 @@
+C:\Users\Anwender\Desktop\HCIController\hci\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\cxx\RelWithDebInfo\2i5fp4a3\obj\arm64-v8a

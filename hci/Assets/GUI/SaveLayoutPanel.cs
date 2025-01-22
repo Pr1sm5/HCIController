@@ -7,16 +7,7 @@ public class SaveLayoutPanel : MonoBehaviour
     public TMP_InputField layoutNameInput;
     public LayoutManager layoutManager;
     public LayoutDropdown layoutDropdown; // Neue Referenz
-
-    public void OpenSavePanel()
-    {
-        if (savePanel != null)
-        {
-            savePanel.SetActive(true);
-            layoutNameInput.text = "";
-        }
-    }
-
+    
     public void SaveLayout()
     {
         string layoutName = layoutNameInput.text;

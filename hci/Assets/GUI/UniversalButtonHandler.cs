@@ -7,9 +7,6 @@ using Vector2 = System.Numerics.Vector2;
 
 public class UniversalButtonHandler : MonoBehaviour
 {
-    public GameObject settingsPanel;
-    public GameObject controllerPanel;
-    public GameObject layoutPanel;
     public ControllerInputData InputData;
     private JoystickHandler[] joysticks = new JoystickHandler[2]; // Referenzen zu allen Joysticks
     [SerializeField] private JoystickHandler joystickLeft;
@@ -34,7 +31,7 @@ public class UniversalButtonHandler : MonoBehaviour
             Debug.LogError("StartClient component not found in parent!");
         }
         joysticks[0] = joystickLeft.GetComponent<JoystickHandler>();
-        joysticks[1] = joystickRight.GetComponent<JoystickHandler>();;
+        joysticks[1] = joystickRight.GetComponent<JoystickHandler>();
     }
 
     private void Update()
@@ -45,50 +42,7 @@ public class UniversalButtonHandler : MonoBehaviour
             UpdateJoysticks();
         }
     }
-
-    public void OpenSettings()
-    {
-        settingsPanel.SetActive(true);
-        controllerPanel.SetActive(false);
-        layoutPanel.SetActive(false);
-    }
-
-    public void CloseSettings()
-    {
-        settingsPanel.SetActive(false);
-        controllerPanel.SetActive(true);
-        layoutPanel.SetActive(false);
-    }
     
-    public void OpenLayout()
-    {
-        layoutPanel.SetActive(true);
-        settingsPanel.SetActive(false);
-        controllerPanel.SetActive(false);
-        
-        // Aktiviere Layout-Modus für alle Joysticks im Layout-Panel
-        foreach (JoystickHandler joystick in joysticks)
-        {
-            if (joystick.transform.parent == layoutPanel.transform)
-            {
-                joystick.SetLayoutMode(true);
-            }
-        }
-    }
-
-    public void CloseLayout()
-    {
-        settingsPanel.SetActive(true);
-        layoutPanel.SetActive(false);
-        controllerPanel.SetActive(false);
-        
-        // Deaktiviere Layout-Modus für alle Joysticks
-        foreach (JoystickHandler joystick in joysticks)
-        {
-            joystick.SetLayoutMode(false);
-        }
-    }
-
     //Updates the Joystick positions
     private void UpdateJoysticks()
     {
@@ -165,18 +119,8 @@ public class UniversalButtonHandler : MonoBehaviour
                 case "Right-Stick" :
                     break;
                 case "Settings":
-                    if (settingsPanel.activeSelf == false) {
-                        OpenSettings();
-                    } else {
-                        CloseSettings();
-                    }
                     break;
                 case "Layout":
-                    if (layoutPanel.activeSelf == false) {
-                        OpenLayout();
-                    } else {
-                        CloseLayout();
-                    }
                     break;
                 default:
                     Debug.LogWarning($"Unrecognized button: {buttonName}");
@@ -264,18 +208,8 @@ public class UniversalButtonHandler : MonoBehaviour
 
                 break;
             case "Settings":
-                if (settingsPanel.activeSelf == false) {
-                    OpenSettings();
-                } else {
-                    CloseSettings();
-                }
                 break;
             case "Layout":
-                if (layoutPanel.activeSelf == false) {
-                    OpenLayout();
-                } else {
-                    CloseLayout();
-                }
                 break;
             case "Start":
 
