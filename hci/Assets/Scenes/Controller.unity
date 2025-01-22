@@ -3751,7 +3751,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 268.00006, y: -201}
-  m_SizeDelta: {x: 402, y: 402}
+  m_SizeDelta: {x: 249.7028, y: 249.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &684190803
 MonoBehaviour:
@@ -3841,6 +3841,7 @@ MonoBehaviour:
   handle: {fileID: 684190802}
   maxDistance: 50
   isLayoutMode: 0
+  _isDragging: 0
 --- !u!114 &684190807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10729,6 +10730,7 @@ MonoBehaviour:
   handle: {fileID: 1805018838}
   maxDistance: 50
   isLayoutMode: 1
+  _isDragging: 0
 --- !u!1 &1831033609
 GameObject:
   m_ObjectHideFlags: 0
@@ -11790,7 +11792,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -650, y: -89}
-  m_SizeDelta: {x: 402, y: 402}
+  m_SizeDelta: {x: 262.9708, y: 262.9708}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2009326373
 MonoBehaviour:
@@ -11807,6 +11809,7 @@ MonoBehaviour:
   handle: {fileID: 2009326372}
   maxDistance: 50
   isLayoutMode: 0
+  _isDragging: 0
 --- !u!114 &2009326374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12505,6 +12508,7 @@ MonoBehaviour:
   handle: {fileID: 2139390117}
   maxDistance: 50
   isLayoutMode: 1
+  _isDragging: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
