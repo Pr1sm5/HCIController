@@ -20,7 +20,7 @@ public class UniversalButtonHandler : MonoBehaviour
     private short _rightStickX;
 
     private float _lastUpdateTime = 0f;
-    private float _joystickUpdateInterval = 0.005f;
+    private float _joystickUpdateInterval = 0.01f;
     
     private void Start()
     {
@@ -40,7 +40,8 @@ public class UniversalButtonHandler : MonoBehaviour
     private void Update()
     {
         float currentTime = Time.time;
-        if (currentTime - _lastUpdateTime >= _joystickUpdateInterval)
+        if (joystickLeft._isDragging || joystickRight._isDragging) UpdateJoysticks();
+        else if (currentTime - _lastUpdateTime >= _joystickUpdateInterval)
         {
             UpdateJoysticks();
         }
@@ -98,13 +99,13 @@ public class UniversalButtonHandler : MonoBehaviour
 
             if (joystick == joysticks[0])
             {
-                _leftStickX = (short)(input.x * short.MaxValue);
-                _leftStickY = (short)(input.y * short.MaxValue);
+                _leftStickX = (short)((input.x * short.MaxValue) );
+                _leftStickY = (short)((input.y * short.MaxValue) );
             }
             else
             {
-                _rightStickX = (short)(input.x * short.MaxValue);
-                _rightStickY = (short)(input.y * short.MaxValue);
+                _rightStickX = (short)((input.x * short.MaxValue) );
+                _rightStickY = (short)((input.y * short.MaxValue) );
             }
         }
         InputData.LeftThumbX = _leftStickX;

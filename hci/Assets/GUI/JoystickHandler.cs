@@ -9,7 +9,7 @@ public class JoystickHandler : MonoBehaviour, IDragHandler, IPointerUpHandler, I
     
     private Vector2 _inputVector = Vector2.zero;
     private Vector2 _initialPosition;
-    private bool _isDragging = false;
+    public bool _isDragging = false;
     private RectTransform _baseTransform;
     private Canvas _canvas;
 
