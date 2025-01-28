@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="307612b3-ad79-440a-a090-aedbee4a60f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/GUI/IJoystick.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/GUI/IJoystick.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.hci/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.hci/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/Debug/1o2o2y6b/arm64-v8a/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/Debug/1o2o2y6b/arm64-v8a/configure_fingerprint.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GUI/JoystickHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI/JoystickHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GUI/UniversalButtonHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI/UniversalButtonHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Controller test dynamic Stick.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Controller test dynamic Stick.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings 1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="307612b3-ad79-440a-a090-aedbee4a60f1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,7 +123,7 @@
       <workItem from="1737548289944" duration="10767000" />
       <workItem from="1737575703719" duration="40000" />
       <workItem from="1737575755726" duration="3276000" />
-      <workItem from="1738058109193" duration="4768000" />
+      <workItem from="1738058109193" duration="5622000" />
     </task>
     <servers />
   </component>
