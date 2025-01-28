@@ -195,12 +195,10 @@ public class LayoutManager : MonoBehaviour
                 new ButtonData { buttonName = "Back", position = new Vector2(-215, 201), scale = 0.25f },
                 new ButtonData { buttonName = "LB", position = new Vector2(-580, 302), scale = 0.5f },
                 new ButtonData { buttonName = "RB", position = new Vector2(420, 284), scale = 0.5f }, 
-                new ButtonData { buttonName = "Settings", position = new Vector2(-71, 90), scale = 0.3f }
-            },
-            sticks = new List<StickData>
-            {
-                new StickData { stickName = "Left-Stick", position = new Vector2(-650, -89), scale = 0.75f },
-                new StickData { stickName = "Right-Stick", position = new Vector2(268, -201), scale = 0.75f }  
+                new ButtonData { buttonName = "Settings", position = new Vector2(-71, 90), scale = 0.3f },
+                new ButtonData { buttonName = "FloatingLeft", position = new Vector2(-580, -208), scale = 1f },
+                new ButtonData { buttonName = "FloatingRight", position = new Vector2(292, -222), scale = 1f }
+                
             }
         };
 
