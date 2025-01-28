@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="307612b3-ad79-440a-a090-aedbee4a60f1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/GUI/IJoystick.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GUI/IJoystick.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.hci/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.hci/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GUI/LayoutManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI/LayoutManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GUI/ScaleSliderManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI/ScaleSliderManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.utmp/Debug/1o2o2y6b/arm64-v8a/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/Debug/1o2o2y6b/arm64-v8a/configure_fingerprint.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI/JoystickHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI/JoystickHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI/UniversalButtonHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI/UniversalButtonHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Controller test dynamic Stick.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Controller test dynamic Stick.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +28,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/44f3679c53d1477a9c6e72f269e3a3a91de200/90/6375f25b/RectTransform.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c08eccfa13ce4e9da1b670057c10656118600/5d/8e525826/WebCamTexture.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cdbf1342a3f14ce9b6eeba5c4f7941717da00/64/e35379f7/IBarcodeReader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d44b17e136d09081da1e8fd0e8c83fde60e11818b9f2442d7ed8cb733fae895e/System.Collections.Generic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GUI/UnityMainThreadDispatcher.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy/Editor/ViewSwitcher.cs" root0="SKIP_HIGHLIGHTING" />
@@ -55,7 +65,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$USER_HOME$/Unity HCI test build\hci_Controller.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../Unity HCI test build\hci_Controller.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\PrismZ\Documents\Unity HCI test build" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -63,7 +73,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.32f1-x86_64\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity\6000.0.32f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;C:\Users\Anwender\OneDrive\Kot\Semester 3\HCI\hci&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Anwender\OneDrive\Kot\Semester 3\HCI\hci" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -71,7 +81,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.32f1-x86_64\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity\6000.0.32f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;C:\Users\Anwender\OneDrive\Kot\Semester 3\HCI\hci&quot; -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Anwender\OneDrive\Kot\Semester 3\HCI\hci" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -83,9 +93,6 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
-      <option name="runtimes">
-        <list />
-      </option>
       <option name="selectedOptions">
         <list />
       </option>
@@ -96,9 +103,6 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
-      <option name="runtimes">
-        <list />
-      </option>
       <option name="selectedOptions">
         <list />
       </option>
@@ -130,6 +134,7 @@
       <workItem from="1737548289944" duration="10767000" />
       <workItem from="1737575703719" duration="40000" />
       <workItem from="1737575755726" duration="3276000" />
+      <workItem from="1738058109193" duration="4768000" />
     </task>
     <servers />
   </component>

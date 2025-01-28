@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/QRReader.unity
     guid: 2458b72286ba68a49b676539f0bf0784
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Controller.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Controller test dynamic Stick.unity
+    guid: a73b26a8f20b11847a8479d771eda149
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: ca7ce01c90fcc30459e3b61699426856, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: f93cf1f57017c0e4a97a15d65ecd6585, type: 2}

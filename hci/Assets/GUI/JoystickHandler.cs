@@ -1,7 +1,8 @@
-﻿using UnityEngine;
+﻿using ControllerEmulation;
+using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class JoystickHandler : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointerDownHandler
+public class JoystickHandler : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointerDownHandler, IJoystick
 {
     public RectTransform handle;
     public float maxDistance = 50f;
@@ -9,7 +10,7 @@ public class JoystickHandler : MonoBehaviour, IDragHandler, IPointerUpHandler, I
     
     private Vector2 _inputVector = Vector2.zero;
     private Vector2 _initialPosition;
-    public bool _isDragging = false;
+    public bool isDragging { get; set; }
     private RectTransform _baseTransform;
     private Canvas _canvas;
 
@@ -22,7 +23,7 @@ public class JoystickHandler : MonoBehaviour, IDragHandler, IPointerUpHandler, I
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        _isDragging = true;
+        isDragging = true;
         if (!isLayoutMode)
         {
             OnDrag(eventData);
@@ -31,7 +32,7 @@ public class JoystickHandler : MonoBehaviour, IDragHandler, IPointerUpHandler, I
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (!_isDragging) return;
+        if (!isDragging) return;
 
         if (isLayoutMode)
         {
@@ -69,7 +70,7 @@ public class JoystickHandler : MonoBehaviour, IDragHandler, IPointerUpHandler, I
             handle.anchoredPosition = _initialPosition;
             _inputVector = Vector2.zero;
         }
-        _isDragging = false;
+        isDragging = false;
     }
 
     public Vector2 GetInput()

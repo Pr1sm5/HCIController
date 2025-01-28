@@ -8,9 +8,9 @@ using Vector2 = System.Numerics.Vector2;
 public class UniversalButtonHandler : MonoBehaviour
 {
     public ControllerInputData InputData;
-    private JoystickHandler[] joysticks = new JoystickHandler[2]; // Referenzen zu allen Joysticks
-    [SerializeField] private JoystickHandler joystickLeft;
-    [SerializeField] private JoystickHandler joystickRight;
+    private IJoystick[] joysticks = new IJoystick[2]; // Referenzen zu allen Joysticks
+    [SerializeField] private MonoBehaviour joystickLeft;
+    [SerializeField] private MonoBehaviour joystickRight;
     private short _leftStickY;
     private short _leftStickX;
     private short _rightStickY;
@@ -30,14 +30,14 @@ public class UniversalButtonHandler : MonoBehaviour
         {
             Debug.LogError("StartClient component not found in parent!");
         }
-        joysticks[0] = joystickLeft.GetComponent<JoystickHandler>();
-        joysticks[1] = joystickRight.GetComponent<JoystickHandler>();
+        joysticks[0] = joystickLeft as IJoystick;
+        joysticks[1] = joystickRight as IJoystick;
     }
 
     private void Update()
     {
         float currentTime = Time.time;
-        if (joystickLeft._isDragging || joystickRight._isDragging) UpdateJoysticks();
+        if (joysticks[0].isDragging || joysticks[1].isDragging) UpdateJoysticks();
         else if (currentTime - _lastUpdateTime >= _joystickUpdateInterval)
         {
             UpdateJoysticks();
@@ -66,7 +66,7 @@ public class UniversalButtonHandler : MonoBehaviour
         InputData.LeftThumbY = _leftStickY;
         InputData.RightThumbX = _rightStickX;
         InputData.RightThumbY = _rightStickY;
-        //Debug.Log($"LeftX {InputData.LeftThumbX} ### LeftY {InputData.LeftThumbY} \n RightX {InputData.RightThumbX} ### RightY {InputData.RightThumbY}");
+        Debug.Log($"LeftX {InputData.LeftThumbX} ### LeftY {InputData.LeftThumbY} \n RightX {InputData.RightThumbX} ### RightY {InputData.RightThumbY}");
     }
     
     public void OnButtonPress(string buttonName)
