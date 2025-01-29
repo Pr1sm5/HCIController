@@ -66,7 +66,6 @@ public class UniversalButtonHandler : MonoBehaviour
         InputData.LeftThumbY = _leftStickY;
         InputData.RightThumbX = _rightStickX;
         InputData.RightThumbY = _rightStickY;
-        Debug.Log($"LeftX {InputData.LeftThumbX} ### LeftY {InputData.LeftThumbY} \n RightX {InputData.RightThumbX} ### RightY {InputData.RightThumbY}");
     }
     
     public void OnButtonPress(string buttonName)
@@ -96,6 +95,12 @@ public class UniversalButtonHandler : MonoBehaviour
                     break;
                 case "RB":
                     InputData.ButtonR1 = true;
+                    break;
+                case "RT":
+                    InputData.RightTrigger = 255;
+                    break;
+                case "LT":
+                    InputData.LeftTrigger = 255;
                     break;
                 case "Start":
                     InputData.ButtonStart = true;
@@ -156,6 +161,12 @@ public class UniversalButtonHandler : MonoBehaviour
                     break;
                 case "RB":
                     InputData.ButtonR1 = false;
+                    break;
+                case "RT":
+                    InputData.RightTrigger = 0;
+                    break;
+                case "LT":
+                    InputData.LeftTrigger = 0;
                     break;
                 case "Start":
                     InputData.ButtonStart = false;

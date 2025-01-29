@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Panel
+  - FloatingStick
   layers:
   - Default
   - TransparentFX

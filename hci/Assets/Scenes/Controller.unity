@@ -10863,7 +10863,7 @@ GameObject:
   - component: {fileID: 1569264324}
   m_Layer: 5
   m_Name: FloatingLeft
-  m_TagString: Untagged
+  m_TagString: FloatingStick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11387,7 +11387,7 @@ GameObject:
   - component: {fileID: 1675836838}
   m_Layer: 5
   m_Name: FloatingLeft
-  m_TagString: Untagged
+  m_TagString: FloatingStick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11660,7 +11660,7 @@ GameObject:
   - component: {fileID: 1702000949}
   m_Layer: 5
   m_Name: FloatingRight
-  m_TagString: Untagged
+  m_TagString: FloatingStick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13601,7 +13601,7 @@ GameObject:
   - component: {fileID: 1913111033}
   m_Layer: 5
   m_Name: FloatingRight
-  m_TagString: Untagged
+  m_TagString: FloatingStick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -6,14 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="307612b3-ad79-440a-a090-aedbee4a60f1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.hci/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.hci/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/Debug/1o2o2y6b/arm64-v8a/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/Debug/1o2o2y6b/arm64-v8a/configure_fingerprint.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Buttons/Button - PS Directional Arrow Down.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Buttons/Button - PS Directional Arrow Down.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Buttons/Button - PS Directional Arrow Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Buttons/Button - PS Directional Arrow Right.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Buttons/button_xbox_analog_trigger_light_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Buttons/button_xbox_analog_trigger_light_1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Buttons/button_xbox_analog_trigger_light_2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Buttons/button_xbox_analog_trigger_light_2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GUI/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI/Client.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI/ScaleSliderManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI/ScaleSliderManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI/UniversalButtonHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI/UniversalButtonHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Controller.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Controller.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +131,8 @@
       <workItem from="1737575755726" duration="3276000" />
       <workItem from="1738058109193" duration="5622000" />
       <workItem from="1738067103593" duration="1900000" />
-      <workItem from="1738163941904" duration="3540000" />
+      <workItem from="1738163941904" duration="4338000" />
+      <workItem from="1738175975098" duration="205000" />
     </task>
     <servers />
   </component>

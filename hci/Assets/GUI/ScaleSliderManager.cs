@@ -59,7 +59,16 @@ public class ScaleSliderManager : MonoBehaviour
     {
         if (newTarget != null)
         {
-            currentTarget = newTarget.GetComponent<RectTransform>();
+            if (newTarget.CompareTag("FloatingStick"))
+            {
+                Transform trans = newTarget.GetComponentInChildren<Image>().transform;
+                
+                currentTarget = trans.GetComponentInChildren<Image>().rectTransform;
+            }
+            else
+            {
+                currentTarget = newTarget.GetComponent<RectTransform>();
+            }
             scaleSlider.value = currentTarget.localScale.x; // Slider auf aktuelle Skalierung setzen
         }
     }
