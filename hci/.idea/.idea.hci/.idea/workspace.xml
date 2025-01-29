@@ -6,46 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="307612b3-ad79-440a-a090-aedbee4a60f1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.hci/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.hci/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/.cmake/api/v1/reply/cache-v2-11a7ebc357d98cc7b921.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/.cmake/api/v1/reply/cmakeFiles-v1-22de730e1580e876fa92.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/.cmake/api/v1/reply/codemodel-v2-af9c3975ea986697deb0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/.cmake/api/v1/reply/index-2025-01-22T15-53-10-0509.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/.cmake/api/v1/reply/target-game-RelWithDebInfo-f562100ff3d1be86fa3a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/.cmake/api/v1/reply/target-swappywrapper-RelWithDebInfo-37d6408a4fbe7878bc4c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/CMakeFiles/rules.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/FramePacing/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/FramePacing/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/GameActivity/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/android_gradle_build_mini.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/compile_commands.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/compile_commands.json.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/compile_commands.json.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/configure_fingerprint.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/metadata_generation_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/2i5fp4a3/arm64-v8a/metadata_generation_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/tools/release/arm64-v8a/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/tools/release/arm64-v8a/compile_commands.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GUI/LayoutManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI/LayoutManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.utmp/Debug/1o2o2y6b/arm64-v8a/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/Debug/1o2o2y6b/arm64-v8a/configure_fingerprint.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Buttons/Button - PS Directional Arrow Down.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Buttons/Button - PS Directional Arrow Down.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Buttons/Button - PS Directional Arrow Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Buttons/Button - PS Directional Arrow Right.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Buttons/button_xbox_analog_trigger_light_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Buttons/button_xbox_analog_trigger_light_1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Buttons/button_xbox_analog_trigger_light_2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Buttons/button_xbox_analog_trigger_light_2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI/Client.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Controller.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Controller.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings 1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +64,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$USER_HOME$/Unity HCI test build\hci_Controller.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../Unity HCI test build\hci_Controller.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\PrismZ\Documents\Unity HCI test build" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -104,7 +72,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.32f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity\6000.0.32f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;C:\Users\Anwender\OneDrive\Kot\Semester 3\HCI\hci&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Anwender\OneDrive\Kot\Semester 3\HCI\hci" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -112,7 +80,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.32f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity\6000.0.32f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;C:\Users\Anwender\OneDrive\Kot\Semester 3\HCI\hci&quot; -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Anwender\OneDrive\Kot\Semester 3\HCI\hci" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -124,9 +92,6 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
-      <option name="runtimes">
-        <list />
-      </option>
       <option name="selectedOptions">
         <list />
       </option>
@@ -137,9 +102,6 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
-      <option name="runtimes">
-        <list />
-      </option>
       <option name="selectedOptions">
         <list />
       </option>
@@ -173,6 +135,7 @@
       <workItem from="1737575755726" duration="3276000" />
       <workItem from="1738058109193" duration="5622000" />
       <workItem from="1738067103593" duration="1900000" />
+      <workItem from="1738163941904" duration="3540000" />
     </task>
     <servers />
   </component>

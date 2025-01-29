@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      button_xbox_analog_trigger_light_1_0: -2997408673081825432
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

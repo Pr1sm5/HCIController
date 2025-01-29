@@ -29,6 +29,7 @@ public class Client : MonoBehaviour
 
     public void StartClient()
     {
+        if (_isRunning) return;
         _isRunning = true;
         _clientThread = new Thread(ConnectToServer);
         _clientThread.IsBackground = true;
@@ -37,14 +38,14 @@ public class Client : MonoBehaviour
 
     public void StopClient()
     {
+        
         _isRunning = false;
-
         if (_socket != null && _socket.Connected)
         {
             _socket.Close();
         }
-
         _clientThread?.Join(); // Wait for thread to finish
+        
     }
 
     private void ConnectToServer()
